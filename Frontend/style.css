@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #977fcf 0%, #e29cce 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+ 
+  #message {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    form {
+      padding: 20px 15px;
+    }
+  
+    form h2 {
+      font-size: 20px;
+    }
+  }
+  

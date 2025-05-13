@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup & Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="message"></div>
+
+    <form id="signupForm">
+      <h2>Signup</h2>
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="phoneNumber" placeholder="Phone Number" required />
+      <button type="submit">Signup</button>
+    </form>
+
+    <form id="otpForm" class="hidden">
+      <h2>Verify OTP</h2>
+      <input type="email" id="otpEmail" placeholder="Email" readonly required />
+      <input type="text" id="otpCode" placeholder="OTP" required />
+      <button type="submit">Verify OTP</button>
+    </form>
+
+    <form id="loginForm" class="hidden">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
