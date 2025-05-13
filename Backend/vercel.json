@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/**/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/api/$1.js" }
+    ],
+    "env": {
+      "MONGODB_URI": "@mongodb_uri",
+      "JWT_SECRET": "@jwt_secret",
+      "TWILIO_SID": "@twilio_sid",
+      "TWILIO_AUTH": "@twilio_auth",
+      "TWILIO_PHONE": "@twilio_phone",
+      "EMAIL_USER": "@email_user",
+      "EMAIL_PASS": "@email_pass"
+    }
+  }
+  
